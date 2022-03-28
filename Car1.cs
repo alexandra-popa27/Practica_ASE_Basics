@@ -15,7 +15,7 @@ namespace Practica_ASE_Basics
         public int NoOfDoors { get; set; }
         public int Kilometers { get; set; }
         public CapacityEnum Capacity { get; set; }
-        public string Color { get; set; }
+        public ColorEnum Color { get; set; }
         public int GetNoOfSeats(string model)
         {
             throw new NotImplementedException();
