@@ -30,7 +30,7 @@ class Program
         Car car = new Car("mercedes");
         Console.WriteLine("Masina e:" + car._audi);
 
-        Car1 audi = new Car1() { Brand = "Audi", Capacity = CapacityEnum._3000, Model = "AudiA5", NoOfDoors = 2, Year = 2019, Color = ColorEnum.Red, Kilometers = 8000 };
+        Car1 audi = new Car1() { Brand = BrandConstants.Audi, Capacity = CapacityEnum._3000, Model = ModelConstants.AudiConstants.AudiA5, NoOfDoors = 2, Year = 2019, Color = ColorEnum.Red, Kilometers = 8000 };
         audi.Run();
     }
 }

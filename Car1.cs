@@ -16,10 +16,10 @@ namespace Practica_ASE_Basics
         public int Kilometers { get; set; }
         public CapacityEnum Capacity { get; set; }
         public ColorEnum Color { get; set; }
-        public int GetNoOfSeats(string model)
-        {
-            throw new NotImplementedException();
-        }
+        //public int GetNoOfSeats(string model)
+        //{
+        //    throw new NotImplementedException();
+        //}
         public void Run()
         {
             if((int)Capacity<600)
@@ -27,6 +27,12 @@ namespace Practica_ASE_Basics
                 throw new Exception("Impossible to start the car.");
             }
             else { Console.WriteLine("Car started:" + Brand + " " + Model); }
+        }
+        public int GetNoOfSeats(string model)
+        {
+            if (model == ModelConstants.AudiConstants.AudiA5)
+                return 2;
+            return 4;
         }
     }
 }
